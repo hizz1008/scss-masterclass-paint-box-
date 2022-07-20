@@ -14,6 +14,7 @@ function scrollJs() {
 
 scrollJs();
 window.addEventListener('scroll', scrollJs);
+
 /* 
 스크롤 값이 100보다 커지면 로고사이즈안에 폰트 크기를 30px로 준다
 스크롤 값이 500보다 작아지면 원래 사이즈로 돌아간다
