@@ -32,7 +32,6 @@ const watch = () => {
 };
 
 const clean = () => del(["dest/"]);
-
 const prepare = gulp.series([clean]);
 
 const assets = gulp.series([styles]);

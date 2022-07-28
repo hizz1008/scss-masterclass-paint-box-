@@ -35,7 +35,7 @@ body > *:not(.footer) {
   width: 240px;
   height: 55px;
   border: 1px solid white;
-  @extend %mintitle;
+  @extend %mintitle !optional;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
@@ -45,7 +45,7 @@ body > *:not(.footer) {
 }
 .arrow_border_btn {
   display: flex;
-  @extend %mintitle;
+  @extend %mintitle !optional;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   .text_box {
@@ -136,9 +136,8 @@ header {
     height: 75px;
     .header__text {
       display: flex;
-      align-content: start;
       white-space: nowrap;
-      @extend %miniTitle;
+      @extend %miniTitle !optional;
       width: 250px;
       color: $grey;
       ul {
@@ -152,7 +151,7 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      text-align: center;
       text-transform: uppercase;
       padding: 0.2em;
       font-size: 15px;
@@ -161,12 +160,12 @@ header {
     .header__userInform {
       width: 130px;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: center;
       width: 250px;
       color: $grey;
       h3 {
-        @extend %miniTitle;
+        @extend %miniTitle !optional;
         padding-right: 5em;
       }
     }
@@ -197,7 +196,7 @@ main {
     margin-bottom: 80px;
     .hero_text {
       h3 {
-        @extend %miniTitle;
+        @extend %miniTitle !optional;
         padding-bottom: 45px;
       }
       h4 {
@@ -272,7 +271,7 @@ main {
       }
       h4 {
         text-transform: capitalize;
-        @extend %miniTitle;
+       @extend %miniTitle !optional;
         margin-bottom: 20px;
       }
       h5 {
@@ -318,9 +317,10 @@ main {
     }
   }
 }
+
 .footer {
   margin-top: 80px;
   display: flex;
   justify-content: space-between;
-  background-color: blueviolet;
+  background-color: aqua;
 }
